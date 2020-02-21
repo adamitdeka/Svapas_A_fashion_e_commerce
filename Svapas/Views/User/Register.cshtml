@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+}
+
+<h2>Register</h2>
+<form action="/User/Register" method="post">
+    <div class="formField">
+        <label class="fieldLabel" for="userFname">First Name:</label>
+        <input type="text" class="textInput" id="userFname" name="userFname" />
+    </div>
+    <div class="formField">
+        <label class="fieldLabel" for="userLname">Last Name:</label>
+        <input type="text" class="textInput" id="userLname" name="userLname" />
+    </div>
+    <div class="formField">
+        <label class="fieldLabel" for="userEmail">Email:</label>
+        <input type="text" class="textInput" id="userEmail" name="userEmail" />
+    </div>
+    <div class="formField">
+        <label class="fieldLabel" for="userPhone">Phone:</label>
+        <input type="text" class="textInput" id="userPhone" name="userPhone" />
+    </div>
+    <div class="formField">
+        <label class="fieldLabel" for="userName">Set Username:</label>
+        <input type="text" class="textInput" id="userName" name="userName" />
+    </div>
+    <div class="formField">
+        <label class="fieldLabel" for="userPassword">Set Password</label>
+        <input type="password" class="textInput" id="userPassword" name="userPassword" />
+    </div>
+    <input type="submit" class="submitButton" id="regSubButton" name="registerButton" />
+</form>
+

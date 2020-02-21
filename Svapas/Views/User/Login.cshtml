@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+
+    <div style="text-align:center">
+        <h2>Login</h2>
+        <form method="post" action="/User/Login">
+            <div class="formField">
+                <label class="fieldLabel" for="userName" style="padding:1em">Username</label>
+                <input type="text" class="textInput" id="userName" name="userName" />
+            </div>
+            <div class="formField">
+                <label class="fieldLabel" for="userPassword" style="padding:1em">Password</label>
+                <input type="password" class="textInput" id="userPassword" name="userPassword" />
+            </div>
+            <input type="submit" class="submitButton btn-lg btn-primary" id="loginButton" name="loginButton" value="Login" />
+        </form>
+        <a href="/User/Register" style="font-size:1.5em; font-weight:bold">Sign Up</a>
+    </div>
+
+

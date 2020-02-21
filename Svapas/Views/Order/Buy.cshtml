@@ -1,0 +1,14 @@
+﻿@model Svapas.Models.ViewModels.OrderClothing
+
+@{
+    ViewBag.Title = "Buy";
+}
+
+<h1>Thank you for shopping with us</h1>
+
+<div>Order Id: @Model.Order.OrderId</div>
+<div>Ordered Clothing: @Model.Clothing.ClothingName</div>
+<div>Order Price: $@(Model.Clothing.ClothingPrice/100)</div>
+<div>Ordered by: @Model.Order.User.UserFname @Model.Order.User.UserLname</div>
+<div>Order Time: @Model.Order.OrderDateTime</div>
+

@@ -1,0 +1,14 @@
+﻿@model Svapas.Models.User
+
+@{
+    ViewBag.Title = "UserProfile";
+}
+
+<h1>Your Profile</h1>
+<div><a href="/Clothing/List">Shop</a></div>
+<div class="container">
+    <div>Name: @Model.UserFname +@Model.UserLname </div>
+    <div>Email: @Model.UserEmail</div>
+    <div>Phone: @Model.UserPhone</div>
+    <div><a href="/Order/List/@Model.UserId">My Orders</a></div>
+</div>

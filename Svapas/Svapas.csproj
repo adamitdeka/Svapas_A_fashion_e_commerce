@@ -127,7 +127,10 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ClothingController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\OrderController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Data\SvapasContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -140,11 +143,20 @@
     <Compile Include="Migrations\202002191830240_AllModel19_02_201.designer.cs">
       <DependentUpon>202002191830240_AllModel19_02_201.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202002200031598_final.cs" />
+    <Compile Include="Migrations\202002200031598_final.designer.cs">
+      <DependentUpon>202002200031598_final.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002201631435_final1.cs" />
+    <Compile Include="Migrations\202002201631435_final1.designer.cs">
+      <DependentUpon>202002201631435_final1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Clothing.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="Models\ViewModels\OrderClothing.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -183,9 +195,17 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Clothing\List.cshtml" />
+    <Content Include="Views\Clothing\Show.cshtml" />
+    <Content Include="Views\User\Register.cshtml" />
+    <Content Include="Views\User\Login.cshtml" />
+    <Content Include="Views\User\UserProfile.cshtml" />
+    <Content Include="Views\Order\Buy.cshtml" />
+    <Content Include="Views\Order\List.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -206,6 +226,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202002191830240_AllModel19_02_201.resx">
       <DependentUpon>202002191830240_AllModel19_02_201.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002200031598_final.resx">
+      <DependentUpon>202002200031598_final.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002201631435_final1.resx">
+      <DependentUpon>202002201631435_final1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

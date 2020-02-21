@@ -1,0 +1,23 @@
+﻿@model Svapas.Models.ViewModels.OrderClothing
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>Your Orders</h2>
+<div>
+    @{ foreach (var Order in Model)
+        {
+        <div>
+            <div>Order Id: @Order.Order.OrderId</div>
+            <div>Ordered Clothing: @Order.Clothing.ClothingName</div>
+            <div>Order Price: $@(Order.Clothing.ClothingPrice / 100)</div>
+            <div>Ordered by: @Order.Order.User.UserFname @Order.Order.User.UserLname</div>
+            <div>Order Time: @Order.Order.OrderDateTime</div>
+        </div>
+        }
+    }
+</div>
+
+
+
+

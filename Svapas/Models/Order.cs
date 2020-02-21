@@ -17,6 +17,6 @@ namespace Svapas.Models
         public virtual User User { get; set; }
         public DateTime OrderDateTime { get; set; }
         public int OrderPrice { get; set; } //all price is in cents
-        public ICollection<Clothing> Clothings { get; set; } //representing many clotingss in many orders many clothings
+        public ICollection<Clothing> Clothings { get; set; } //representing many clothings in many orders many clothings
     }
 }
